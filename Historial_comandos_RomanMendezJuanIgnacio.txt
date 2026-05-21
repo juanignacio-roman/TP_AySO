@@ -1,0 +1,198 @@
+pwd
+ls
+man ls
+ls -l
+cd README
+cd repogit/
+ls
+ls -l
+cd ..
+ls -a
+ls -a *l
+ls -a -l
+ls -al
+pwd
+cd /
+pwd
+ls
+ls *l
+ls -l
+ls -la
+cd etc/
+ls
+cd dev/
+cd ..
+cd dev/
+ls
+cd ..
+cd /
+cd etc
+ls
+ls -la
+cat passwd
+tac passwd
+pwd
+man pwd
+ls
+ls gss
+ls -l gss
+cd ..
+cd $home
+cd ..
+exit
+ls
+cd README
+pwd
+cat README 
+tac README 
+cat << hola
+algo
+nose
+q ue
+4
+Hola
+hola
+
+cat << Fin > algo
+as
+asd
+asf
+gas
+saer
+Fin
+
+ls
+cat algo 
+cd /
+ls
+cd proc/
+ls
+cat cpuinfo 
+vim
+vim algo.txt
+ls
+rm algo
+ls
+rm algo.txt 
+ls
+exit 
+exit
+ssh-keygen
+ls
+cat $HOME/ .ssh/id_rsa.pub
+cd
+pwd
+mkdir repogit
+ls
+cd repogit/
+ls
+cd UTN-FRA_SO_onBording/
+ls
+cd
+ls
+cd repogit/
+ls -la
+git clone git@github.com:juanignacio-roman/TP_AySO.git
+cd TP_AySO/
+pwd
+ls -l
+cd
+ls
+cd repogit/
+ls
+cd
+cat /etc/passwd
+grep -i ubuntu /etc/passwd
+ubuntu /etc/passwd | awk -F: '{print $2}'
+grep -i ubuntu /etc/passwd | awk -F: '{print $2}' > datos_usuario.txt
+ls
+cat datos_usuario.txt 
+whoami
+echo "Usuario=$(whoami)" >> datos_usuario.txt
+cat datos_usuario.txt 
+ls
+cd repogit/
+ls
+cd TP_AySO/
+pwd
+mv ~/datos_usuario.txt .
+ls
+git add datos_usuario.txt 
+git status
+cd
+cat /proc/cpuinfo
+grep "model name" /proc/cpuinfo | head -n 1
+grep "model name" /proc/cpuinfo | head -n 1 > info_pc.txt
+ls
+cd repogit/
+ls
+cd TP_AySO/
+ls
+cd
+cat info_pc.txt 
+mv ~/info_pc.txt ~/repogit/TP_AySO
+ls
+cd repogit/
+cd TP_AySO/
+ls
+git add info_pc.txt 
+git commit -m "feat: Añadiendo información de CPU"
+git status
+git config --global user.name "juanignacio-roman"
+git config --global user.email "juaniiomann@gmail.com"
+git commit -m "feat: Añadiendo información de CPU"
+git push origin main
+man grep
+man sort
+grep -v "nologin" /etc/passwd | sort -t: -k7 | head -n 10 > lista_ordenada
+cat lista_ordenada 
+git add lista_ordenada 
+git status
+git commit -m "ADD: Listado de usuarios ordenada"
+git push origin main
+cat << FIN >> README.md 
+Alumno: Juan Ignacio Roman Mendez
+Division: 116
+Turno: Mañana
+FIN
+
+cat README.md 
+git add README.md 
+git commit -m "docs: agregar información del alumno al README"
+git push origin main
+sudo snap install tree
+mkdir -p ~/TP1/arquitectura/Clase{1..5} ~/TP1/so/Clase{1..6}
+ls
+tree ~/TP1
+cd
+ls
+vim script_dir.sh
+chmod +x script_dir.sh
+ls -l
+git add .
+ls
+cd repogit/
+cd TP_AySO/
+git add .
+git status
+ls
+cd
+ls
+mv script_dir.sh repogit/
+ls
+cd repogit/
+ls
+mv script_dir.sh TP_AySO/
+ls
+cd TP_AySO/
+git add .
+git status
+git push
+vagrant@VMPruebas:~/repogit/TP_AySO$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+nothing to commit, working tree clean
+git commit -m "ADD: Añadiendo script"
+git push
+history -a
+cp ../../.bash_history Historial_comandos_TuApellidoNombre.txt
